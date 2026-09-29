@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  @media (min-width: 640px) {
+    html {
+      font-size: 17.5px;
+    }
+  }
+
+  body {
+    font-family: 'Nunito', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1e293b;
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  #root {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  input, textarea, select {
+    user-select: text;
+    font-size: 0.95rem;
+  }
+
+  /* Make small badges and captions comfortable to read on mobile phones */
+  .text-xs {
+    font-size: 0.8125rem !important; /* ~14.6px */
+    line-height: 1.25rem !important;
+  }
+}
+
+/* Hide scrollbars for slick mobile tabs and horizontal lists */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Smooth scrolling container class */
+.smooth-scroll {
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+/* Visible, modern horizontal scrollbars */
+.visible-scrollbar-x {
+  overflow-x: auto !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #64748b #f1f5f9 !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+.visible-scrollbar-x::-webkit-scrollbar {
+  height: 8px !important;
+  width: 8px !important;
+  display: block !important;
+  -webkit-appearance: none !important;
+}
+.visible-scrollbar-x::-webkit-scrollbar-track {
+  background: #f1f5f9 !important;
+  border-radius: 9999px !important;
+  border: 1px solid #e2e8f0 !important;
+}
+.visible-scrollbar-x::-webkit-scrollbar-thumb {
+  background: #64748b !important;
+  border-radius: 9999px !important;
+  border: 1.5px solid #f1f5f9 !important;
+}
+.visible-scrollbar-x::-webkit-scrollbar-thumb:hover {
+  background: #334155 !important;
+}

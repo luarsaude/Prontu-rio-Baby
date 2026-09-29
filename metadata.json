@@ -1,0 +1,6 @@
+{
+  "name": "Meu Prontuário Infantil",
+  "description": "Aplicativo de prontuário eletrônico infantil simples e acolhedor para acompanhamento de consultas, exames, receitas, raio-x e saúde do bebê.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
